@@ -1,10 +1,10 @@
-import React from "react";
+import "./formInput.scss";
 
 type Props = {};
 
-export default function FormInput({}: Props) {
+export default function LoginPage({}: Props) {
   return (
-    <div>
+    <div className="container">
       <div className="main">
         <input type="checkbox" id="chk" aria-hidden="true" />
 

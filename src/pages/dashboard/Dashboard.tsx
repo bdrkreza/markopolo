@@ -1,6 +1,7 @@
 import { FiEdit } from "react-icons/fi";
 import { MdAddBox } from "react-icons/md";
 import { RiDeleteBack2Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import logo from "../../assets/image/avatar.svg";
 import "./dashboard.scss";
 type Props = {};
@@ -23,12 +24,14 @@ export default function Dashboard({}: Props) {
               address: <span className="address">usa</span>
             </p>
             <div className="buttons">
-              <button className="add">
+              <Link to="/add" className="add">
                 <MdAddBox />
-              </button>
-              <button className="edit">
+              </Link>
+
+              <Link to="/edit" className="edit">
                 <FiEdit />
-              </button>
+              </Link>
+
               <button className="delete">
                 <RiDeleteBack2Line />
               </button>
